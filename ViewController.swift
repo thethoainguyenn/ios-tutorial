@@ -30,7 +30,7 @@ class ViewController: UIViewController,
     // Event select row
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print(indexPath)
-        let goToDemoList: DemoListViewController = storyboard?.instantiateViewController(withIdentifier: "demoListViewController") as! DemoListViewController
+        let goToDemoList: ListTableViewController = storyboard?.instantiateViewController(withIdentifier: "listTableViewController") as! ListTableViewController
         self.navigationController?.pushViewController(goToDemoList, animated: true)
     }
     // Call 2 funtion of UITable...
